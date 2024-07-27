@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+/* font-family: "Karla", sans-serif;
+   -Weights: 400, 700  */
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(200, 9%, 80%);
+    --grayishBlue: hsl(217, 13%, 55%);
+    --White: hsl(0, 11%, 84%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Karla", sans-serif;
+    background-color: var(--lightGray);
+}
+.container{
+    width: 330px;
+    margin: 68px auto;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*-------section1--------*/
+.section1{
+    padding: 30px 25px;
+    height: 265px;
+}
+.section1 h1{
+    color: var(--Cyan);
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.section1 h2{
+    color: var(--brightYellow);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.section1 p{
+    color: var(--grayishBlue);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+/*------section2------*/
+.section2 {
+    padding: 30px 25px;
+    background-color: var(--Cyan);
+    height: 226px;
+}
+.section2 h1{
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section2 span{
+    color: var(--White);
+    font-size: 13px;
+    position: relative;
+    left: 7px;
+    bottom: 5px;
+    color: rgb(177, 173, 165);
+}
+.section2 b{
+    font-size: 25px;
+    color: var(--White);
+    font-weight: 700;
+    position: relative;
+}
+.section2 p{
+    color: var(--White);
+    margin-top: 15px;
+    font-weight: 400;
+}
+.section2 button{
+    width: 263px;
+    height: 48px;
+    margin-top: 20px;
+    color: white;
+    background-color: var(--brightYellow);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.37);
+}
+.section2 button:hover{
+    border: 1px solid white;
+    background-color: var(--Cyan);
+    color: black;
+    box-shadow: none;
+}
+
+/*-------section3-----*/
+.section3{
+    padding: 30px 25px;
+    background-color: rgb(74, 190, 189);
+    height: 226px;
+}
+.section3 h1{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.section3 h3{
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: var(--White);
+}
+
+/*---------MQ--------*/
+@media screen and (min-width: 635px) {
+    .container{
+        width: 633px;
+        height: 474px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 160px auto 60px;
+
+    }
+    .section1{
+        grid-column: 1/3;
+        height: 215px;
+        padding: 44px 40px;
+    }
+    .section1 h1{
+        font-size: 1.5rem;
+    }
+    .section1 h2{
+        font-size: 1.2rem;
+    }
+    .section1 p{
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .section2{
+        height: 259px;
+    }
+    .section2 h1{
+        font-size: 1.3rem;
+    }
+    .section2 b{
+        font-size: 2rem;
+    }
+    .section2 span{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .section2 p{
+        font-size: 1rem;
+        margin-bottom: 16px;
+        position: relative;
+        top: 7px;
+    }
+    .section2 .button{
+        text-align: center;
+    }
+    .section2 button{
+        width: 235px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    .section3{
+        height: 259px;
+    }
+    .section3 h1{
+        font-size: 1.5rem;
+    }
+    .section3 h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+
+
+/*------footer------*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.attribution a { 
+    color: var(--Cyan); 
+    text-decoration: none;
+}
